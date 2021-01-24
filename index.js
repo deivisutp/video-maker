@@ -4,10 +4,12 @@ const robots = {
     userInput: require('./robots/user-input.js'),
     text: require('./robots/text.js')
 }
-const TREND_URL = 'https://trends.google.com/trends/trendingsearches/daily/rss?geo=BR' 
+const TREND_URL = 'https://trends.google.com/trends/trendingsearches/daily/rss?' 
 
 async function start() {
-    const content = {}
+    const content = {
+        maximumSentences: 7
+    }
 
     content.searchTerm = await askAndReturnSearchTerm()
     content.prefix = askAndReturnPrefix()
