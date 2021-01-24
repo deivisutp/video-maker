@@ -1,6 +1,9 @@
 const readline = require('readline-sync')
 const Parser = require('rss-parser')
-
+const robots = {
+    userInput: require('./robots/user-input.js'),
+    text: require('./robots/text.js')
+}
 const TREND_URL = 'https://trends.google.com/trends/trendingsearches/daily/rss?geo=BR' 
 
 async function start() {
@@ -9,6 +12,8 @@ async function start() {
     content.searchTerm = await askAndReturnSearchTerm()
     content.prefix = askAndReturnPrefix()
 
+    await robots.text(content)
+    
     async function askAndReturnSearchTerm() {
         response = readline.question('Type a Wikipidea search term or G to fecth google trends: ')
 
