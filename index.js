@@ -13,6 +13,7 @@ async function start() {
     content.searchTerm = await askAndReturnSearchTerm()
     content.prefix = askAndReturnPrefix()
 
+    //user-input
     await robots.text(content)
 
     async function askAndReturnSearchTerm() {
