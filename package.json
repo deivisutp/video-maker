@@ -17,6 +17,7 @@
   "homepage": "https://github.com/deivisutp/video-maker#readme",
   "description": "",
   "dependencies": {
-    "readline-sync": "^1.4.10"
+    "readline-sync": "^1.4.10",
+    "rss-parser": "^3.10.0"
   }
 }
