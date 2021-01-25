@@ -4,7 +4,7 @@ const Parser = require('rss-parser')
 const TREND_URL = 'https://trends.google.com/trends/trendingsearches/daily/rss?' 
 
 async function robot() {
-    const content = {
+    const content = { 
         maximumSentences: 7
     }
 
