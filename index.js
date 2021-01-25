@@ -14,5 +14,4 @@ async function start() {
     const content = robots.state.load(); 
     console.dir(content, {depth: null})
 }
- 
 start()
