@@ -161,15 +161,15 @@ async function robot() {
     return new Promise((resolve, reject) => {
       const systemPlatform=os.platform
       
-      let aerenderFilePath = ''
+      let aerenderFilePath = 'C:\\Program Files\\Adobe\\Adobe After Effects CC 2019\\Support Files\\aerender.exe'
 
-      if (systemPlatform== 'darwin'){
-        aerenderFilePath = '/Applications/Adobe After Effects CC 2019/aerender'
-      }else if (systemPlatform=='win32'){
-        aerenderFilePath = '%programfiles%\Adobe\Adobe After Effects CC\Arquivos de suporte\aerender.exe'
-      }else{
-        return reject(new Error('System not Supported'))
-      }
+      //if (systemPlatform== 'darwin'){
+      //  aerenderFilePath = '/Applications/Adobe After Effects CC 2019/aerender'
+      //}else if (systemPlatform=='win32'){
+      //  aerenderFilePath = '%programfiles%\Adobe\Adobe After Effects CC 2019\Arquivos de suporte\aerender.exe'
+     // }else{
+     //   return reject(new Error('System not Supported'))
+      //}
       
       const templateFilePath = fromRoot('./templates/1/template.aep')
       const destinationFilePath = fromRoot('./content/output.mov')
