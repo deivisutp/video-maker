@@ -12,6 +12,11 @@ credentials/*.json
 
 content.json
 
+#Content
+content/*.png
+content/*.mov
+content/*.jpg
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
