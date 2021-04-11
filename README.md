@@ -1,7 +1,7 @@
 ## Demo 📸
 
 <div align="center" >
-  <img src="./github/my-wallet.gif" alt="demo-web" height="425">
+  <img src="./youtube_robot.gif" alt="demo-web" height="425">
 </div>
 
 ## Sobre o Projeto / About this project
